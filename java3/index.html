@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/70c5d85be0.js"crossorigin="anonymous"></script> <!-- Font Awesome licensed Script -->
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Jayakishan_Presingu.png" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Java Developer</p>
+          <h1> Hi, I'm <span> Jayakishan Presingu </span> from <br> United States </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ------------- about -------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Jay1.jpg" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I am Jayakishan Presingu, a dedicated Java Full Stack Developer
+              with 3 years of industry experience, currently based in Irving,
+              Tx, United States. My journey in software development has been
+              fueled by a passion for crafting innovative and efficient web
+              applications. Proficient in Java, Spring Framework, React.js, and
+              other related technologies, I excel in both front-end and back-end
+              development, ensuring seamless user experiences and scalable
+              solutions. My expertise extends to HTML, CSS, JavaScript, and SQL,
+              enabling me to deliver robust and high-performance applications.
+              As a detail-oriented problem solver, I thrive in collaborative
+              environments, working closely with cross-functional teams to
+              deliver projects on time and within scope. I am committed to
+              continuous learning and staying updated with the latest trends in
+              the Java ecosystem, ensuring that I always bring cutting-edge
+              solutions to the table. With a strong focus on code quality and
+              best practices, I am eager to contribute my skills and expertise
+              to a dynamic team, creating meaningful and impactful solutions
+              that drive business success.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+              <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+              <p class="tab-links" onclick="opentab('education')"> Education </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul> <li> <span>Programming/Web Technologies</span><br> Java 11 / Java 8, HTML5, CSS3, JavaScript, TypeScript, jQuery, php </li>
+                <li> <span> Frameworks </span> <br> Spring, Spring Boot, Hibernate, React, Vue.js, Material UI, Bootstrap </li>
+                <li> <span> Databases </span> <br> MySQL, Oracle, Mongo DB, Redis </li>
+                <li> <span>Tools/Platforms </span> <br> Git, GitLab, Linux, JIRA, Maven, Jenkins, Kafka, Agile, Swagger, Rabbit MQ, Postman, Junit, Eclipse, Mockito, Spring Tool Suite (STS), FileZilla, Putty, JSON, XML, Docker </li>
+                <li> <span> Methodologie </span> <br> Agile, Scrum and Waterfall </li>
+              </ul>
+
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul> <li> <span> August 2022 - Present </span> <br>JAVA FULL STACK  DEVELOPER at Shrive Solutions LLC. </li>
+                <li> <span>July 2018 – December 2020</span><br />SOFTWARE ENGINEER at VRK Technologies PVT. LTD. </li>
+                <li> <span>May 2017 – June 2017</span><br /> SUMMER INTERN at Rashtriya Ispat Nigam Limited (RINL) </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul> <li> <span>January 2021 - May 2022</span><br />Master of Science in Computer Science </li>
+                <li> <span>June 2014 - May 2018</span><br />Bachelor of Technology in Computer Science & Engineering </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------services----------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Full Stack Web Development</h2>
+            <p>
+              Create end-to-end web applications using Java, Spring Framework, and React.js, delivering seamless user experiences and robust functionality.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-gear"></i>
+            <h2>API Development</h2>
+            <p>
+              Build secure and efficient RESTful APIs using Spring Boot, enabling smooth communication between front-end and back-end components.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Design and Management</h2>
+            <p>
+              Design and optimize SQL and NoSQL databases, ensuring efficient data storage and retrieval for your applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2>Front-End Development</h2>
+            <p>
+              Implement responsive and interactive user interfaces using HTML, CSS, and JavaScript libraries like React.js, delivering visually appealing designs.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>React.js Frameworks</h2>
+            <p>
+              Skilled in React.js frameworks (Redux, Material-UI, React Router). Delivers interactive and performant web apps. Proficient Java Full Stack Developer.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-creative-commons-remix"></i>
+            <h2>Progressive Web Apps (PWA) Development</h2>
+            <p>
+              Specialized in building Progressive Web Apps using React.js, providing users with an app-like experience, offline access, and enhanced performance, bridging the gap between web and mobile applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-laptop-code"></i>
+            <h2>Back-End Development</h2>
+            <p>
+              Develop scalable and performant back-end systems using Java and Spring Framework, handling business logic and data processing.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-object-group"></i>
+            <h2>Integration Services</h2>
+            <p>
+              Seamlessly integrate third-party services and APIs into your applications, expanding their functionality and capabilities.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>AWS Cloud Service</h2>
+            <p>
+              Experienced in AWS deployment & management - EC2, S3, Lambda, DynamoDB. Proficient in Docker, Kubernetes for scalable applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-gears"></i>
+            <h2>Testing and Quality Assurance</h2>
+            <p>
+              Conduct thorough testing, including unit testing and integration testing, to ensure the stability and reliability of your applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-bug-slash"></i>
+            <h2>Performance Optimization</h2>
+            <p>
+              Identify and resolve performance bottlenecks in applications, optimizing load times and ensuring smooth user experiences.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-infinity"></i>
+            <h2>Continuous Integration and Deployment</h2>
+            <p>
+              Set up CI/CD pipelines to automate the build, testing, and deployment process, ensuring faster and reliable releases.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-brands fa-docker"></i>
+            <h2>Containerized Application Deployment</h2>
+            <p>
+              Proficient in containerization using Docker and skilled in deploying applications to Kubernetes clusters, ensuring efficient scaling, management, and orchestration of containerized environments.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-eye"></i>
+            <h2>Code Review and Refactoring</h2>
+            <p>
+              Provide code reviews and perform code refactoring to improve code uality, maintainability, and adherence to coding standards.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-sitemap"></i>
+            <h2>Application Architecture</h2>
+            <p>
+              Design scalable and maintainable application architectures, ensuring optimal performance and future scalability.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>Version Control and Collaboration</h2>
+            <p>
+              Utilize Git for version control, enabling efficient collaboration and code management in team environments.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-fill"></i>
+            <h2>Responsive Design</h2>
+            <p>
+              Implement responsive web designs, ensuring that applications adapt seamlessly to various screen sizes and devices.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>Security and Authentication</h2>
+            <p>
+              Implement secure authentication and authorization mechanisms, protecting your applications from potential threats.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-star-of-life"></i>
+            <h2>Healthcare Application Development</h2>
+            <p>
+              Experienced in building secure and compliant healthcare applications tha t adhere to HIPAA regulations, ensuring patient data privacy and security.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-regular fa-file"></i>
+            <h2>Documentation</h2>
+            <p>
+              Create comprehensive technical documentation to facilitate understanding and future maintenance of your projects.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------portfolio----------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h3>Clinical Tail Management System</h3>
+              <p>
+                As a Java Full Stack Developer, I excel in cutting-edge enterprise app development using Java, Spring Boot, React.js. Led "Clinical Tail Management System" with seamless front-to-back-end, Docker/Kubernetes containerization, AWS for efficient cloud deployment, and Jenkins/GitLab CI/CD pipelines. Passionate about innovation and delivering exceptional results.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.jpg" alt="" />
+            <div class="layer">
+              <h3>E-Commerce Smart Cart</h3>
+              <p>
+                Created E-Commerce Smart Cart with Java, Spring Boot, React.js. Real-time product search, dynamic filtering, user authentication. User-friendly interface, JavaScript & React.js. AWS deployment for scalability & reliability.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h3>Summer Intern</h3>
+              <p>
+                At RINL, interned in ERP-IT. Collaborated on web projects, seamless IT integration, and process optimization. Gained front-end exp (HTML, CSS, JSP, Servlets, Ajax) & database design. Enhanced Java-based web dev skills.</p>
+              <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+      </div>
+    </div>
+
+    <!-- ---------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-solid fa-envelope-open-text"></i> &nbsp; presingu.jayakishan@gmail.com </p>
+            <p> <i class="fa-solid fa-phone"></i> &nbsp; (940)-331-8495 </p>
+            <div class="social-icons">
+              &nbsp; &nbsp; <a href="https://www.linkedin.com/in/jayakishan97/"> <i class="fa-brands fa-linkedin"> </i> </a>
+              &nbsp; &nbsp; <a href="https://github.com/Jaykishan97"> <i class="fa-brands fa-github"> </i> </a>
+              &nbsp; &nbsp; <a href="https://www.hackerrank.com/Jaykishan97?hr_r=1"> <i class="fa-brands fa-hackerrank"> </i> </a>
+            </div>
+            <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <input type="phone" name="Phone" placeholder="Your Phone Number" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p> Copyright © Jayakishan Presingu. <i class="fa-solid fa-heart"></i> </p>
+      </div>
+    </div>
+
+    <!-- ---------JavaScript code----------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0px";
+      }
+      
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    
+    </script>
+
+    <!-- ---------JavaScript Contact Form--------------- -->
+    <script>  
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzEIxFZfZ9NtRmolTquYhKCwvOF0nWPqxa3-HV0-MW0p00ybHcht7mbHxWawVktQQgKVQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully!!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>    
+
+  </body>
+</html>
