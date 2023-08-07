@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/70c5d85be0.js"crossorigin="anonymous"></script> <!-- Font Awesome licensed Script -->
+  </head>
+
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/Jayakishan_Presingu.png" alt="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Software Developer - C# & React</p>
+          <h1> Hi, I'm <span> Jayakishan Presingu </span> <br> from United States </h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------End----------- -->
+
+    <!-- ------------- about -------------------- -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Jay1.jpg" />
+          </div>
+
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Hello, I am Jayakishan Presingu, an adept Software Developer experienced in C# and React.js. Proficient in a range of languages including Java, PHP, and Python, I excel in crafting seamless web applications using React.js, HTML5, CSS3, and Bootstrap. With expertise in ASP.NET, ASP.NET Core, and .NET Core's dependency injection, I ensure efficient and scalable solutions. My familiarity with Material-UI and React Router enhances user experiences, while Microsoft SQL Server and Entity Framework streamline data management. Skilled in AWS, I leverage EC2, S3, and RDS for reliable cloud solutions. I automate tasks using Python, Flask, and Ansible, and implement CI/CD through Jenkins and GitLab. My commitment to Test-Driven Development ensures code quality. Proficient in SQL query writing, I utilize complex queries for insightful analysis. Experienced in collaboration through Jira and TFS, I design responsive applications with ASP.NET Core for diverse platforms. Ready to contribute technical excellence and innovation to your team.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')"> Skills </p>
+              <p class="tab-links" onclick="opentab('experience')"> Experience </p>
+              <p class="tab-links" onclick="opentab('education')"> Education </p>
+            </div>
+
+            <div class="tab-contents active-tab" id="skills">
+              <ul> <li> <span>Programming/Web Technologies</span><br>  C#, Java, React.js, HTML5, CSS3, Bootstrap, jQuery </li>
+                <li> <span> Frameworks </span> <br> ASP.NET, ASP.NET Core, Spring Boot, Entity Framework, Material-UI, React Router </li>
+                <li> <span> Databases </span> <br> Microsoft SQL Server, MySQL, Entity Framework </li>
+                <li> <span> RESTful APIs </span> <br> ASP.NET Web API, Spring Web Services </li>
+                <li> <span> Cloud Technologies </span> <br> Amazon Web Services (AWS) - EC2, S3, RDS </li>
+                <li> <span>Tools/Platforms </span> <br> Git, GitLab, Visual Studio, Eclipse, IntelliJ IDEA, Jira, Splunk, XML, JSON, Flask, Ansible, Test-Driven Development (TDD), NUnit, Docker, Kubernetes </li>
+                <li> <span> Methodologie </span> <br> Agile, Scrum and Waterfall </li>
+              </ul>
+
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul> <li> <span> August 2022 - Present </span> <br>SOFTWARE ENGINEER at Shrive Solutions LLC. </li>
+                <li> <span>July 2018 – December 2020</span><br />SOFTWARE ENGINEER at VRK Technologies PVT. LTD. </li>
+                <li> <span>May 2017 – June 2017</span><br /> SUMMER INTERN at Rashtriya Ispat Nigam Limited (RINL) </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul> <li> <span>January 2021 - May 2022</span><br />Master of Science in Computer Science </li>
+                <li> <span>June 2014 - May 2018</span><br />Bachelor of Technology in Computer Science & Engineering </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------End----------- -->
+    
+    <!-- ---------Skills----------- -->
+
+    <div id="skills">
+      <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/c-sharp-logo.png" alt="c-sharp-logo"/>
+            <h3 class="skill-name">C#</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/dotnetcore.png" alt="">
+            <h3 class="skill-name"> .NET Core</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/mysql-logo.png" alt="mysql-logo"/>
+            <h3 class="skill-name">MySQL</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/microsoft-sql-server.png" alt="microsoft-sql-server"/>
+            <h3 class="skill-name">MS Sql Server</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/javascript--v1.png" alt="javascript--v1"/>
+            <h3 class="skill-name">JavaScript</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/typescript.png" alt="typescript"/>
+            <h3 class="skill-name">TypeScript</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/html-5--v1.png" alt="html-5--v1"/>
+            <h3 class="skill-name">HTML5</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/css3.png" alt="css3"/>
+            <h3 class="skill-name">CSS3</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/office/480/react.png" alt="react"/>
+            <h3 class="skill-name">React</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/nodejs.png" alt="">
+            <h3 class="skill-name">Nodejs</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/2D2D2D/amazon-web-services.png" alt="amazon-web-services"/>
+            <h3 class="skill-name">AWS</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/color/480/gitlab.png" alt="gitlab"/>
+            <h3 class="skill-name">GitLab</h3>
+          </div>
+          <div class="skill-card">
+            <img src="images/Kafka.png" alt="">
+            <h3 class="skill-name">Kafka</h3>
+          </div>
+          <div class="skill-card">
+            <img width="480" height="480" src="https://img.icons8.com/fluency/480/docker.png" alt="docker"/>
+            <h3 class="skill-name">Docker</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------End----------- -->
+
+    <!-- ---------services----------- -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Full Stack Web Development</h2>
+            <p>
+              Skilled Java Full Stack Developer with expertise in Java, Spring Framework, and React.js. Delivers seamless web apps with efficient back-end development using Spring Boot, Spring Data JPA, and containerization with Docker and Kubernetes. Passionate about innovation and code quality.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+
+          <!-- <div>
+            <i class="fa-solid fa-gear"></i>
+            <h2>API Development</h2>
+            <p>
+              Build secure and efficient RESTful APIs using Spring Boot, enabling smooth communication between front-end and back-end components.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-database"></i>
+            <h2>Database Design and Management</h2>
+            <p>
+              Design and optimize SQL and NoSQL databases, ensuring efficient data storage and retrieval for your applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div> -->
+
+          <!-- <div>
+            <i class="fa-solid fa-file-code"></i>
+            <h2> Development</h2>
+            <p>
+              Implement responsive and interactive user interfaces using HTML, CSS, and JavaScript libraries like React.js, delivering visually appealing designs.
+            </p>
+            <a href="#">Learn More</a>
+          </div> -->
+
+          <div>
+            <i class="fa-brands fa-react"></i>
+            <h2>Frontend-React.js Frameworks</h2>
+            <p>
+              As a proficient Java Full Stack Developer, I implement responsive and interactive user interfaces using HTML, CSS, and React.js, delivering visually appealing designs. Skilled in React.js frameworks like Redux, Material-UI, and React Router, I deliver interactive and performant web applications.</p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+
+          <!-- <div>
+            <i class="fa-brands fa-creative-commons-remix"></i>
+            <h2>Progressive Web Apps (PWA) Development</h2>
+            <p>
+              Specialized in building Progressive Web Apps using React.js, providing users with an app-like experience, offline access, and enhanced performance, bridging the gap between web and mobile applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div> -->
+
+          <div>
+            <!-- <i class="fa-solid fa-laptop-code"></i> -->
+            <i class="fa-solid fa-sitemap"></i>
+            <h2>Back-End Development</h2>
+            <p>
+              Experienced Java Full Stack Developer proficient in building scalable and performant back-end systems with Java and Spring Framework. Specializes in handling complex business logic and efficient data processing, ensuring robust and reliable applications. Leveraging Spring Boot and Spring Data JPA for seamless integration and data management.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+
+          <!-- <div>
+            <i class="fa-solid fa-object-group"></i>
+            <h2>Integration Services</h2>
+            <p>
+              Seamlessly integrate third-party services and APIs into your applications, expanding their functionality and capabilities.
+            </p>
+            <a href="#">Learn More</a>
+          </div> -->
+
+          <div>
+            <i class="fa-solid fa-cloud"></i>
+            <h2>AWS Cloud Service</h2>
+            <p>
+              Experienced in AWS deployment & management, utilizing services like EC2, S3, Lambda, and DynamoDB for efficient cloud solutions. Proficient in containerization with Docker and Kubernetes, ensuring scalable and resilient applications for optimal performance.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+
+          <!-- <div>
+            <i class="fa-solid fa-gears"></i>
+            <h2>Testing and Quality Assurance</h2>
+            <p>
+              Conduct thorough testing, including unit testing and integration testing, to ensure the stability and reliability of your applications.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-bug-slash"></i>
+            <h2>Performance Optimization</h2>
+            <p>
+              Identify and resolve performance bottlenecks in applications, optimizing load times and ensuring smooth user experiences.
+            </p>
+            <a href="#">Learn More</a>
+          </div> -->
+
+          <div>
+            <i class="fa-solid fa-infinity"></i>
+            <h2>Continuous Integration and Deployment</h2>
+            <p>
+              Set up CI/CD pipelines to automate the build, testing, and deployment process, ensuring faster and reliable releases.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+
+          <div>
+            <i class="fa-brands fa-docker"></i>
+            <h2>Containerized Application Deployment</h2>
+            <p>
+              Proficient in containerization using Docker and skilled in deploying applications to Kubernetes clusters, ensuring efficient scaling, management, and orchestration of containerized environments.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div> 
+
+          <div>
+            <i class="fa-solid fa-code-branch"></i>
+            <h2>Version Control and Collaboration</h2>
+            <p>
+              Utilize Git for version control, enabling efficient collaboration and code management in team environments.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+
+          <!-- <div>
+            <i class="fa-solid fa-eye"></i>
+            <h2>Code Review and Refactoring</h2>
+            <p>
+              Provide code reviews and perform code refactoring to improve code usability, maintainability, and adherence to coding standards.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-sitemap"></i>
+            <h2>Application Architecture</h2>
+            <p>
+              Design scalable and maintainable application architectures, ensuring optimal performance and future scalability.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-fill"></i>
+            <h2>Responsive Design</h2>
+            <p>
+              Implement responsive web designs, ensuring that applications adapt seamlessly to various screen sizes and devices.
+            </p>
+            <a href="#">Learn More</a>
+          </div> -->
+
+          <div>
+            <i class="fa-solid fa-shield-halved"></i>
+            <h2>Security & Authentication</h2>
+            <p>
+              As a security-conscious Java Full Stack Developer, I prioritize the implementation of robust authentication and authorization mechanisms. Leveraging technologies like JSON Web Tokens (JWT), OAuth, and Spring Security.
+            </p>
+            <!-- <a href="#">Learn More</a> -->
+          </div>
+
+          <!-- <div>
+            <i class="fa-solid fa-star-of-life"></i>
+            <h2>Healthcare Application Development</h2>
+            <p>
+              Experienced in building secure and compliant healthcare applications tha t adhere to HIPAA regulations, ensuring patient data privacy and security.
+            </p>
+            <a href="#">Learn More</a>
+          </div>
+
+          <div>
+            <i class="fa-regular fa-file"></i>
+            <h2>Documentation</h2>
+            <p>
+              Create comprehensive technical documentation to facilitate understanding and future maintenance of your projects.
+            </p>
+            <a href="#">Learn More</a>
+          </div> -->
+
+        </div>
+      </div>
+    </div>
+
+    <!-- ---------End----------- -->
+
+    <!-- ---------portfolio----------- -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="" />
+            <div class="layer">
+              <h2>SOFTWARE ENGINEER</h2>
+              <h3>Clinical Trail Management</h3>
+              <!-- <h3>Company: Shrive Solutions LLC.</h3> -->
+              <p>
+                As an adept Software Engineer skilled in C# and React, I have spearheaded dynamic projects at Shrive Solutions. I led the development of a sophisticated Clinical Trial Management System using C#, ASP.NET, and React.js. Proficient in React.js libraries like Redux, React Router, and Material-UI, I've crafted engaging user interfaces. Leveraging Docker and Kubernetes, I've orchestrated seamless deployments, ensuring scalability. Expertise in AWS services, including EC2, S3, Lambda, and DynamoDB, has streamlined cloud operations. My accomplished portfolio underscores these projects, showcasing my technical prowess and proficiency in cutting-edge frameworks and tools. With a strong foundation in C# and React, I am poised to contribute to impactful solutions that drive success.</p>
+              <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.jpg" alt="" />
+            <div class="layer">
+              <h2>JAVA DEVELOPER</h2>
+              <h3>E-Commerce Platform</h3>
+              <p>
+                During my tenure at VRK Technologies, I also led a project to develop a dynamic E-commerce platform using Java and Spring Framework. Utilizing HTML, CSS, and JavaScript libraries like jQuery, I created an interactive user interface with real-time product search and dynamic filtering. Leveraging the power of Hibernate, I implemented efficient data access and seamless integration with the backend. The application's robust design, powered by Struts, ensured a smooth and secure shopping experience for users. The project's successful implementation earned positive feedback from clients and strengthened my expertise in web application development.</p>
+              <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="" />
+            <div class="layer">
+              <h2>SUMMER INTERN</h2>
+              <h3>Summer Intern</h3>
+              <p>
+                As a Summer Intern at Rashtriya Ispat Nigam Limited (RINL), I had the opportunity to work on diverse IT projects within their ERP-IT corporate entity. Collaborating with cross-functional teams, I contributed to the analysis, design, and seamless integration of IT systems and business processes. My efforts were focused on enhancing enterprise resource planning software and optimizing IT infrastructure, gaining valuable experience in the world of business-driven technology solutions. This internship honed my skills in problem-solving and teamwork, and I was able to witness firsthand the impact of IT initiatives on improving business operations.</p>
+              <!-- <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a> -->
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See More</a> -->
+      </div>
+    </div>
+
+    <!-- ---------End----------- -->
+
+
+    <!-- ---------contact----------- -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p> <i class="fa-solid fa-envelope-open-text"></i> &nbsp; presingu.jayakishan@gmail.com </p>
+            <p> <i class="fa-solid fa-phone"></i> &nbsp; (940)-331-8495 </p>
+            <div class="social-icons">
+              &nbsp; &nbsp; <a href="https://www.linkedin.com/in/jayakishan97/"> <i class="fa-brands fa-linkedin"> </i> </a>
+              &nbsp; &nbsp; <a href="https://github.com/Jaykishan97"> <i class="fa-brands fa-github"> </i> </a>
+              &nbsp; &nbsp; <a href="https://www.hackerrank.com/Jaykishan97?hr_r=1"> <i class="fa-brands fa-hackerrank"> </i> </a>
+
+            </div>
+            <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="Email" placeholder="Your Email" required>
+              <input type="phone" name="Phone" placeholder="Your Phone Number" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"> </textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p> Copyright <i class="fa-regular fa-copyright"></i> Jayakishan Presingu.
+      </div>
+    </div>
+
+    <!-- ---------End----------- -->
+
+    <!-- ---------JavaScript code----------- -->
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+    <script>
+
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0px";
+      }
+      
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+    
+    </script>
+
+    <!-- ---------End----------- -->
+
+    <!-- ---------JavaScript Contact Form--------------- -->
+    <script>  
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzEIxFZfZ9NtRmolTquYhKCwvOF0nWPqxa3-HV0-MW0p00ybHcht7mbHxWawVktQQgKVQ/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message sent successfully!!"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            }, 5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+      })
+    </script>    
+
+  </body>
+</html>
+
+<!-- ---------End----------- -->
